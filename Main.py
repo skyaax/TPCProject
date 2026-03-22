@@ -10,14 +10,7 @@ def addition(matrix1, matrix2):
 
 
 def multiplication(matrix1, matrix2):
-    matrix3 = np.empty(matrix1.shape)
-    rows, cols = matrix1.shape
-
-    posy = 0
-    for i in range(rows):
-        for j in range(cols):
-            matrix3[i][posy] += matrix1[i][j] * matrix2[j][i]
-        posy += 1
+    
 
 
     return matrix3
