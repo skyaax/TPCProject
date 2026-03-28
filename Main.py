@@ -1,9 +1,12 @@
 import numpy as np
-
+from PIL import Image
 
 def addition(matrix1, matrix2):
     matrix3 = np.empty(matrix1.shape)
     rows, cols = matrix1.shape
+    if(matrix1.shape!=matrix2.shape):
+        print("Wrong dimensions of matrices")
+        return
     for i in range(rows):
         for j in range(cols):
             matrix3[i][j] = matrix1[i][j] + matrix2[i][j]
@@ -13,6 +16,9 @@ def addition(matrix1, matrix2):
 def substraction(matrix1, matrix2):
     matrix3 = np.empty(matrix1.shape)
     rows, cols = matrix1.shape
+    if(matrix1.shape!=matrix2.shape):
+        print("Wrong dimensions of matrices")
+        return
     for i in range(rows):
         for j in range(cols):
             matrix3[i][j] = matrix2[i][j] - matrix1[i][j]
@@ -21,7 +27,11 @@ def substraction(matrix1, matrix2):
 
 def multiplication(matrix1, matrix2):
     rows, cols = matrix1.shape
+    rows2, col2 = matrix2.shape
     matrix3 = np.empty(matrix1.shape)
+    if(cols!= rows2):
+        print("Wrong dimensions")
+        return
     for i in range(rows):
         for j in range(cols):
             for k in range(cols):
@@ -46,11 +56,36 @@ def scalar(matrix, scalar):
             matrix[i][j] *= scalar
     return matrix
 
+def image_to_matrix(image):
+    img = Image.open(image)
+
+    matrix_red = np.zeros((img.size[1],img.size[0]),dtype=int)
+    matrix_green = np.zeros((img.size[1],img.size[0]),dtype=int)
+    matrix_blue = np.zeros((img.size[1],img.size[0]),dtype=int)
+    pixels = list(img.get_flattened_data())
+    for i in range(img.size[1]):
+        for j in range(img.size[0]):
+            matrix_red[j][i] = pixels[j*img.size[0]+i][0]
+            matrix_green[j][i] = pixels[j*img.size[0]+i][1]
+            matrix_blue[j][i] = pixels[j*img.size[0]+i][2]
+
+    return matrix_red, matrix_green, matrix_blue
+
+
+def matrix_to_image(matrix_red, matrix_green, matrix_blue):
+    rows,cols = matrix_red.shape
+    img = Image.new("RGB", (cols,rows))
+    for i in range(rows):
+        for j in range(cols):
+            img.putpixel((j,i),(matrix_red[i][j], matrix_green[i][j], matrix_blue[i][j]))
+    img.show()
+
 
 if __name__ == '__main__':
-    matrix1 = np.array([[1, 2, 3], [4, 5, 7]])
-    matrix2 = np.array([[10, 10], [10, 10]])
 
+    matrix_red,matrix_green,matrix_blue = image_to_matrix("images.bmp")
+
+    matrix_to_image(matrix_red,matrix_green,matrix_blue)
     # print(multiplication(matrix1, matrix2))
     # print(transpose(matrix1))
 
