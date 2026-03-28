@@ -28,7 +28,7 @@ def substraction(matrix1, matrix2):
 def multiplication(matrix1, matrix2):
     rows, cols = matrix1.shape
     rows2, col2 = matrix2.shape
-    matrix3 = np.empty(matrix1.shape)
+    matrix3 = np.empty(matrix1.shape, dtype=int)
     if(cols!= rows2):
         print("Wrong dimensions")
         return
