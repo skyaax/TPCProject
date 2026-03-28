@@ -65,9 +65,9 @@ def image_to_matrix(image):
     pixels = list(img.get_flattened_data())
     for i in range(img.size[1]):
         for j in range(img.size[0]):
-            matrix_red[j][i] = pixels[j*img.size[0]+i][0]
-            matrix_green[j][i] = pixels[j*img.size[0]+i][1]
-            matrix_blue[j][i] = pixels[j*img.size[0]+i][2]
+            matrix_red[i][j] = pixels[i*img.size[0]+j][0]
+            matrix_green[i][j] = pixels[i*img.size[0]+j][1]
+            matrix_blue[i][j] = pixels[i*img.size[0]+j][2]
 
     return matrix_red, matrix_green, matrix_blue
 
@@ -83,11 +83,10 @@ def matrix_to_image(matrix_red, matrix_green, matrix_blue):
 
 if __name__ == '__main__':
 
-    matrix_red,matrix_green,matrix_blue = image_to_matrix("images.bmp")
+    matrix_red,matrix_green,matrix_blue = image_to_matrix("2.bmp")
 
     matrix_to_image(matrix_red,matrix_green,matrix_blue)
     # print(multiplication(matrix1, matrix2))
     # print(transpose(matrix1))
-
 
 
