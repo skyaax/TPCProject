@@ -35,7 +35,7 @@ def multiplication(matrix1, matrix2):
     for i in range(rows):
         for j in range(cols):
             for k in range(cols):
-                matrix3[i][j] += matrix1[i][k] * matrix2[i][k]
+                matrix3[i][j] += matrix1[i][k] * matrix2[k][j]
 
     return matrix3
 
