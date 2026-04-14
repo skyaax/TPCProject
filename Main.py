@@ -31,7 +31,7 @@ def multiplication(matrix1, matrix2):
     matrix3 = np.empty((rows, cols2), dtype=int)
     if(cols!= rows2):
         print("Wrong dimensions")
-        return
+        return 0
     for i in range(rows):
         for j in range(cols):
             for k in range(cols):
@@ -83,13 +83,16 @@ def matrix_to_image(matrix_red, matrix_green, matrix_blue):
 
 if __name__ == '__main__':
 
-    matrix_red,matrix_green,matrix_blue = image_to_matrix("images.bmp")
+    #matrix_red,matrix_green,matrix_blue = image_to_matrix("images.bmp")
 
-    #matrix_red = np.array([[58,84,199,36,1],[93,66,25,189,20]])
-    #matrix_green = np.array([[27,48,3,7,60], [81,85,32,10,57]])
+    matrix_red = np.array([[58,84,199,36,1],[93,66,25,189,20]])
+    matrix_green = np.array([[27,48,3,7,60], [81,85,32,10,57]])
+
+
+    print(matrix_green.shape)
     #matrix_blue = np.array([[44,33,55,66,77], [88,99,110,140,248]])
-    matrix_to_image(matrix_red,matrix_green,matrix_blue)
-    # print(multiplication(matrix1, matrix2))
-    # print(transpose(matrix1))
+    #matrix_to_image(matrix_red,matrix_green,matrix_blue)
+    #print(multiplication(matrix_red, matrix_green))
+    #print(addition(matrix_red, matrix_green))
 
 
