@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10b03307-dc27-4f0a-b22a-c99cc32bd33f" name="Changes" comment="image_to_matrix, matrix_to_image are done">
+    <list default="true" id="10b03307-dc27-4f0a-b22a-c99cc32bd33f" name="Changes" comment="image_to_matrix, matrix_to_image are done and fixed some problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
@@ -147,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774695908047</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="image_to_matrix, matrix_to_image are done and fixed some problems">
+      <option name="closed" value="true" />
+      <created>1774697325511</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774697325511</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +174,7 @@
     <MESSAGE value="shit" />
     <MESSAGE value="part x done" />
     <MESSAGE value="image_to_matrix, matrix_to_image are done" />
-    <option name="LAST_COMMIT_MESSAGE" value="image_to_matrix, matrix_to_image are done" />
+    <MESSAGE value="image_to_matrix, matrix_to_image are done and fixed some problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="image_to_matrix, matrix_to_image are done and fixed some problems" />
   </component>
 </project>
