@@ -6,7 +6,7 @@ def addition(matrix1, matrix2):
     rows, cols = matrix1.shape
     if(matrix1.shape!=matrix2.shape):
         print("Wrong dimensions of matrices")
-        return
+        return 0
     for i in range(rows):
         for j in range(cols):
             matrix3[i][j] = matrix1[i][j] + matrix2[i][j]
@@ -56,6 +56,8 @@ def scalar(matrix, scalar):
             matrix[i][j] *= scalar
     return matrix
 
+
+##part Y!!
 def image_to_matrix(image):
     img = Image.open(image)
 
@@ -89,7 +91,7 @@ if __name__ == '__main__':
     matrix_green = np.array([[27,48,3,7,60], [81,85,32,10,57]])
 
 
-    print(matrix_green.shape)
+    #print(matrix_green.shape)
     #matrix_blue = np.array([[44,33,55,66,77], [88,99,110,140,248]])
     #matrix_to_image(matrix_red,matrix_green,matrix_blue)
     #print(multiplication(matrix_red, matrix_green))

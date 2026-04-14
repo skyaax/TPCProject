@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10b03307-dc27-4f0a-b22a-c99cc32bd33f" name="Changes" comment="started the project">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774697325511</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="started the project">
+      <option name="closed" value="true" />
+      <created>1776174888295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776174888295</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,11 +177,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="started the project" />
     <MESSAGE value="shit" />
     <MESSAGE value="part x done" />
     <MESSAGE value="image_to_matrix, matrix_to_image are done" />
     <MESSAGE value="image_to_matrix, matrix_to_image are done and fixed some problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="image_to_matrix, matrix_to_image are done and fixed some problems" />
+    <MESSAGE value="started the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="started the project" />
   </component>
 </project>
