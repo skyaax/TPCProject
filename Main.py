@@ -62,7 +62,7 @@ def image_to_matrix(image):
     matrix_red = np.zeros((img.size[1],img.size[0]),dtype=int)
     matrix_green = np.zeros((img.size[1],img.size[0]),dtype=int)
     matrix_blue = np.zeros((img.size[1],img.size[0]),dtype=int)
-    pixels = list(img.get_flattened_data())
+    pixels = list(img.getdata())
     for i in range(img.size[1]):
         for j in range(img.size[0]):
             matrix_red[i][j] = pixels[i*img.size[0]+j][0]
