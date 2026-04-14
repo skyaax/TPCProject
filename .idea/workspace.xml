@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10b03307-dc27-4f0a-b22a-c99cc32bd33f" name="Changes" comment="started the project">
+    <list default="true" id="10b03307-dc27-4f0a-b22a-c99cc32bd33f" name="Changes" comment="changed">
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +162,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776174888295</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="started the project">
+      <option name="closed" value="true" />
+      <created>1776175477317</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1776175477317</updated>
+    </task>
+    <task id="LOCAL-00009" summary="changed">
+      <option name="closed" value="true" />
+      <created>1776175763688</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1776175763688</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +198,7 @@
     <MESSAGE value="image_to_matrix, matrix_to_image are done" />
     <MESSAGE value="image_to_matrix, matrix_to_image are done and fixed some problems" />
     <MESSAGE value="started the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="started the project" />
+    <MESSAGE value="changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed" />
   </component>
 </project>

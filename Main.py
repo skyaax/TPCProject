@@ -26,14 +26,15 @@ def substraction(matrix1, matrix2):
 
 
 def multiplication(matrix1, matrix2):
+
     rows, cols = matrix1.shape
     rows2, cols2 = matrix2.shape
-    matrix3 = np.empty((rows, cols2), dtype=int)
-    if(cols!= rows2):
+    matrix3 = np.zeros((rows, cols2), dtype=int)
+    if cols!= rows2:
         print("Wrong dimensions")
         return 0
     for i in range(rows):
-        for j in range(cols):
+        for j in range(cols2):
             for k in range(cols):
                 matrix3[i][j] += matrix1[i][k] * matrix2[k][j]
 
@@ -58,6 +59,7 @@ def scalar(matrix, scalar):
 
 
 ##part Y!!
+'''
 def image_to_matrix(image):
     img = Image.open(image)
 
@@ -81,15 +83,26 @@ def matrix_to_image(matrix_red, matrix_green, matrix_blue):
         for j in range(cols):
             img.putpixel((j,i),(matrix_red[i][j], matrix_green[i][j], matrix_blue[i][j]))
     img.show()
+'''
 
 
 if __name__ == '__main__':
 
     #matrix_red,matrix_green,matrix_blue = image_to_matrix("images.bmp")
 
-    matrix_red = np.array([[58,84,199,36,1],[93,66,25,189,20]])
-    matrix_green = np.array([[27,48,3,7,60], [81,85,32,10,57]])
+    #matrix_red = np.array([[58,84,199,36,1],[93,66,25,189,20]])
+    #matrix_green = np.array([[27,48,3,7,60], [81,85,32,10,57]])
 
+    A = np.array([
+        [1, 2, 3],
+        [4, 5, 6]
+    ])
+    B = np.array([
+        [7, 8],
+        [9, 10],
+        [11, 12]
+    ])
+    print(multiplication(A,B))
 
     #print(matrix_green.shape)
     #matrix_blue = np.array([[44,33,55,66,77], [88,99,110,140,248]])
