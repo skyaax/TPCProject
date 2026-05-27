@@ -1,0 +1,25 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE/editor files
+.idea/
+.vscode/
+
+# Generated image outputs
+edge_detected_*.png
+gray_*.png
+rotated_*.png
+scaled_*.png
+skewed_*.png
