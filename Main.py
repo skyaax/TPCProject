@@ -194,7 +194,8 @@ if __name__ == '__main__':
     #matrix_green_rotated = rotate_matrix(matrix_green,(cols//2,rows//2),90)
     #matrix_blue_rotated = rotate_matrix(matrix_blue,(cols//2,rows//2),90)
     #matrix_to_image(matrix_red_rotated,matrix_green_rotated,matrix_blue_rotated)
-    
+
+
     #matrix_red_new = scale_matrix(matrix_red,2)
     #matrix_green_new = scale_matrix(matrix_green,2)
     #matrix_blue_new = scale_matrix(matrix_blue,2)
